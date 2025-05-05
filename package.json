@@ -1,0 +1,36 @@
+{
+  "name": "@basepay/core",
+  "version": "1.0.0",
+  "description": "BasePay SDK for interacting with InvoiceTracker smart contracts on Base Chain",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "hardhat test"
+  },
+  "keywords": [
+    "base",
+    "ethereum",
+    "payments",
+    "invoice",
+    "blockchain"
+  ],
+  "author": "joshuasunday300@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.13.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@typechain/ethers-v6": "^0.5.1",
+    "@types/qrcode": "^1.5.5",
+    "typescript": "^5.3.3",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "peerDependencies": {
+    "ethers": "^6.0.0"
+  }
+}
